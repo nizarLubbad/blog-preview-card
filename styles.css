@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  background-color: hsl(47, 88%, 63%);
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 38rem;
+  margin: 9rem auto;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 15px;
+  box-shadow: 0.8rem 0.8rem hsl(0, 0%, 7%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  transition: box-shadow 0.3s ease-in;
+}
+
+.card:hover,
+.card:active {
+  box-shadow: 1.2rem 1.2rem hsl(0, 0%, 7%);
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.post-title:link,
+.post-title:visited {
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: hsl(0, 0%, 7%);
+  transition: color 0.3s;
+}
+
+.post-title:hover,
+.post-title:active {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.tag {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 7%);
+}
+
+.post-summary {
+  color: hsl(0, 0%, 50%);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-photo {
+  width: 2.4rem;
+}
+
+.author-name {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
